@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['stcc4_5fcommand_5fdisable_5ftesting_5fmode_229',['STCC4_COMMAND_DISABLE_TESTING_MODE',['../driver__stcc4_8c.html#af4e0171bfa70bc4475cb2ea89f382229',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fenable_5ftesting_5fmode_230',['STCC4_COMMAND_ENABLE_TESTING_MODE',['../driver__stcc4_8c.html#a8a0c622ad44122957e9435d95415bad0',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fenter_5fsleep_5fmode_231',['STCC4_COMMAND_ENTER_SLEEP_MODE',['../driver__stcc4_8c.html#a977fcfed495a7f1bdcc44a6b0d8372dd',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fexit_5fsleep_5fmode_232',['STCC4_COMMAND_EXIT_SLEEP_MODE',['../driver__stcc4_8c.html#a5fc7f9999c583f38c0e2a3537210ee76',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fget_5fproduct_5fid_233',['STCC4_COMMAND_GET_PRODUCT_ID',['../driver__stcc4_8c.html#a77e009fa21bf3b625325613a7413de8b',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fmeasure_5fsingle_5fshot_234',['STCC4_COMMAND_MEASURE_SINGLE_SHOT',['../driver__stcc4_8c.html#addc5aa6c38a66b1402e094ea26c49ee7',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fperform_5fconditioning_235',['STCC4_COMMAND_PERFORM_CONDITIONING',['../driver__stcc4_8c.html#a0512a615ac64b74dfd5cc55e08b00feb',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fperform_5ffactory_5freset_236',['STCC4_COMMAND_PERFORM_FACTORY_RESET',['../driver__stcc4_8c.html#ab4d1828bc38a882dfcac8b7f84f8d634',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fperform_5fforced_5frecalibration_237',['STCC4_COMMAND_PERFORM_FORCED_RECALIBRATION',['../driver__stcc4_8c.html#a627ebd5ccea6c18346ae607add1d3013',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fperform_5fself_5ftest_238',['STCC4_COMMAND_PERFORM_SELF_TEST',['../driver__stcc4_8c.html#ae7a337c4bfc8204e70acf1923f4b2c56',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fperform_5fsoft_5freset_239',['STCC4_COMMAND_PERFORM_SOFT_RESET',['../driver__stcc4_8c.html#a6d4a90196632f0d6bbbc9da3aa42e950',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fread_5fmeasurement_240',['STCC4_COMMAND_READ_MEASUREMENT',['../driver__stcc4_8c.html#abf21ff99ebdb3f5c7e0f512e4708aa3d',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fset_5fpressurer_5fcompensation_241',['STCC4_COMMAND_SET_PRESSURER_COMPENSATION',['../driver__stcc4_8c.html#af88bac3245971495b6ecd81e90a3f5cd',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fset_5frht_5fcompensation_242',['STCC4_COMMAND_SET_RHT_COMPENSATION',['../driver__stcc4_8c.html#aab5a2cd8645cc8c7ad6bfe4aba94234d',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fstart_5fcontinuous_5fmeasurement_243',['STCC4_COMMAND_START_CONTINUOUS_MEASUREMENT',['../driver__stcc4_8c.html#a56f044ba4df3376898479ce7187f7e73',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fstop_5fcontinuous_5fmeasurement_244',['STCC4_COMMAND_STOP_CONTINUOUS_MEASUREMENT',['../driver__stcc4_8c.html#ae20c09bc107a3e642c03dc20063cca24',1,'driver_stcc4.c']]],
+  ['stcc4_5fcrc8_5finit_245',['STCC4_CRC8_INIT',['../driver__stcc4_8c.html#a77f304e7524323d267d6bbc076f443c7',1,'driver_stcc4.c']]],
+  ['stcc4_5fcrc8_5fpolynomial_246',['STCC4_CRC8_POLYNOMIAL',['../driver__stcc4_8c.html#adc7bf9743ad8eba58627b7650d4c03f6',1,'driver_stcc4.c']]],
+  ['supply_5fvoltage_5fmax_247',['SUPPLY_VOLTAGE_MAX',['../driver__stcc4_8c.html#a68eba8b601afe11f1b871d944976c035',1,'driver_stcc4.c']]],
+  ['supply_5fvoltage_5fmin_248',['SUPPLY_VOLTAGE_MIN',['../driver__stcc4_8c.html#aac8d8cbd899667d609787ef4cf37054d',1,'driver_stcc4.c']]]
+];
