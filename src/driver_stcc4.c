@@ -55,7 +55,7 @@
 #define STCC4_COMMAND_STOP_CONTINUOUS_MEASUREMENT      0x3F86U        /**< stop continuous measurement command */
 #define STCC4_COMMAND_READ_MEASUREMENT                 0xEC05U        /**< read measurement command */
 #define STCC4_COMMAND_SET_RHT_COMPENSATION             0xE000U        /**< set rht compensation command */
-#define STCC4_COMMAND_SET_PRESSURER_COMPENSATION       0xE016U        /**< set pressure compensation command */
+#define STCC4_COMMAND_SET_PRESSURE_COMPENSATION        0xE016U        /**< set pressure compensation command */
 #define STCC4_COMMAND_MEASURE_SINGLE_SHOT              0x219DU        /**< measure single shot command */
 #define STCC4_COMMAND_ENTER_SLEEP_MODE                 0x3650U        /**< enter sleep mode command */
 #define STCC4_COMMAND_EXIT_SLEEP_MODE                  0x00U          /**< exit sleep mode command */
@@ -409,7 +409,7 @@ uint8_t stcc4_set_pressure_compensation(stcc4_handle_t *handle, uint16_t pressur
     buf[0] = (pressure_raw >> 8) & 0xFF;                                                      /* set pressure msb */
     buf[1] = (pressure_raw >> 0) & 0xFF;                                                      /* set pressure lsb */
     buf[2] = a_stcc4_generate_crc(buf + 0, 2);                                                /* set pressure crc */
-    res = a_stcc4_iic_write(handle, STCC4_COMMAND_SET_PRESSURER_COMPENSATION, buf, 3);        /* write config */
+    res = a_stcc4_iic_write(handle, STCC4_COMMAND_SET_PRESSURE_COMPENSATION, buf, 3);         /* write config */
     if (res != 0)                                                                             /* check result */
     {
         handle->debug_print("stcc4: set pressure compensation failed.\n");                    /* set pressure compensation failed */
@@ -864,7 +864,6 @@ uint8_t stcc4_get_product_id(stcc4_handle_t *handle, uint32_t *product_id, uint8
  *             - 2 handle is NULL
  *             - 3 handle is not initialized
  *             - 4 crc is error
- *             - 5 sensor status is invalid
  * @note       none
  */
 uint8_t stcc4_read(stcc4_handle_t *handle, int16_t *co2_raw, int16_t *co2_ppm,
@@ -923,12 +922,6 @@ uint8_t stcc4_read(stcc4_handle_t *handle, int16_t *co2_raw, int16_t *co2_ppm,
     *co2_ppm = *co2_raw;                                                                  /* set co2 ppm */
     *temperature_s = -45.0f + 175.0f * (float)(*temperature_raw) / 65535.0f;              /* set temperature */
     *humidity_s = 125.0f * (float)(*humidity_raw) / 65535.0f - 6.0f;                      /* set humidity */
-    if ((*sensor_status) != 0)                                                            /* check sensor status */
-    {
-        handle->debug_print("stcc4: sensor status is invalid.\n");                        /* sensor status is invalid */
-       
-        return 5;                                                                         /* return error */
-    }
     
     return 0;                                                                             /* success return 0 */
 }
@@ -1090,18 +1083,18 @@ uint8_t stcc4_deinit(stcc4_handle_t *handle)
  */
 uint8_t stcc4_frc_co2_convert_to_register(stcc4_handle_t *handle, float ppm, uint16_t *reg)
 {
-    if (handle == NULL)                       /* check handle */
+    if (handle == NULL)             /* check handle */
     {
-        return 2;                             /* return error */
+        return 2;                   /* return error */
     }
-    if (handle->inited != 1)                  /* check handle initialization */
+    if (handle->inited != 1)        /* check handle initialization */
     {
-        return 3;                             /* return error */
+        return 3;                   /* return error */
     }
     
-    *reg = (uint16_t)(ppm + 32768.0f);        /* convert real data to register data */
+    *reg = (uint16_t)(ppm);         /* convert real data to register data */
     
-    return 0;                                 /* success return 0 */
+    return 0;                       /* success return 0 */
 }
 
 /**

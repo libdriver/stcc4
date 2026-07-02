@@ -12,7 +12,7 @@ var searchData=
   ['stcc4_5fcommand_5fperform_5fself_5ftest_9',['STCC4_COMMAND_PERFORM_SELF_TEST',['../driver__stcc4_8c.html#ae7a337c4bfc8204e70acf1923f4b2c56',1,'driver_stcc4.c']]],
   ['stcc4_5fcommand_5fperform_5fsoft_5freset_10',['STCC4_COMMAND_PERFORM_SOFT_RESET',['../driver__stcc4_8c.html#a6d4a90196632f0d6bbbc9da3aa42e950',1,'driver_stcc4.c']]],
   ['stcc4_5fcommand_5fread_5fmeasurement_11',['STCC4_COMMAND_READ_MEASUREMENT',['../driver__stcc4_8c.html#abf21ff99ebdb3f5c7e0f512e4708aa3d',1,'driver_stcc4.c']]],
-  ['stcc4_5fcommand_5fset_5fpressurer_5fcompensation_12',['STCC4_COMMAND_SET_PRESSURER_COMPENSATION',['../driver__stcc4_8c.html#af88bac3245971495b6ecd81e90a3f5cd',1,'driver_stcc4.c']]],
+  ['stcc4_5fcommand_5fset_5fpressure_5fcompensation_12',['STCC4_COMMAND_SET_PRESSURE_COMPENSATION',['../driver__stcc4_8c.html#a807b32d739098fbbd2a03bb4acfc8135',1,'driver_stcc4.c']]],
   ['stcc4_5fcommand_5fset_5frht_5fcompensation_13',['STCC4_COMMAND_SET_RHT_COMPENSATION',['../driver__stcc4_8c.html#aab5a2cd8645cc8c7ad6bfe4aba94234d',1,'driver_stcc4.c']]],
   ['stcc4_5fcommand_5fstart_5fcontinuous_5fmeasurement_14',['STCC4_COMMAND_START_CONTINUOUS_MEASUREMENT',['../driver__stcc4_8c.html#a56f044ba4df3376898479ce7187f7e73',1,'driver_stcc4.c']]],
   ['stcc4_5fcommand_5fstop_5fcontinuous_5fmeasurement_15',['STCC4_COMMAND_STOP_CONTINUOUS_MEASUREMENT',['../driver__stcc4_8c.html#ae20c09bc107a3e642c03dc20063cca24',1,'driver_stcc4.c']]],
