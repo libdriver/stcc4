@@ -7,6 +7,5 @@ var structstcc4__handle__s =
     [ "iic_init", "structstcc4__handle__s.html#a8826dd07625f8d90859ce9bd09628d61", null ],
     [ "iic_read_cmd", "structstcc4__handle__s.html#acebeabb312305acedcb64f4f10755117", null ],
     [ "iic_write_cmd", "structstcc4__handle__s.html#af9cb104d353f0c18dbb0fd01405f4889", null ],
-    [ "inited", "structstcc4__handle__s.html#a19bedf28d2b9748f6a62d9ae93f4e68f", null ],
-    [ "type", "structstcc4__handle__s.html#a1d127017fb298b889f4ba24752d08b8e", null ]
+    [ "inited", "structstcc4__handle__s.html#a19bedf28d2b9748f6a62d9ae93f4e68f", null ]
 ];

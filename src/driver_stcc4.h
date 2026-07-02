@@ -87,7 +87,6 @@ typedef struct stcc4_handle_s
     void (*delay_ms)(uint32_t ms);                                             /**< point to a delay_ms function address */
     void (*debug_print)(const char *const fmt, ...);                           /**< point to a debug_print function address */
     uint8_t inited;                                                            /**< inited flag */
-    uint8_t type;                                                              /**< chip type */
 } stcc4_handle_t;
 
 /**
@@ -258,7 +257,6 @@ uint8_t stcc4_deinit(stcc4_handle_t *handle);
  *             - 2 handle is NULL
  *             - 3 handle is not initialized
  *             - 4 crc is error
- *             - 5 sensor status is invalid
  * @note       none
  */
 uint8_t stcc4_read(stcc4_handle_t *handle, int16_t *co2_raw, int16_t *co2_ppm,
