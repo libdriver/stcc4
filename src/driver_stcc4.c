@@ -1063,7 +1063,7 @@ uint8_t stcc4_deinit(stcc4_handle_t *handle)
     {
         handle->debug_print("stcc4: iic close failed.\n");                                      /* iic close failed */
     
-        return 3;                                                                               /* return error */
+        return 1;                                                                               /* return error */
     }
     handle->inited = 0;                                                                         /* flag close initialization */
   
